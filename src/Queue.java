@@ -1,12 +1,12 @@
-
 public interface Queue {
-
-	public void enqueue(Object o);
 	
-	public Object dequeue();
+	public void enqueue(Object obj) throws QueueIllegalStateException;
 	
-	public boolean isEmpty();
+	public Object dequeue() throws QueueIllegalStateException;
 	
 	public int size();
 	
+	public boolean isEmpty();
+	
+
 }
